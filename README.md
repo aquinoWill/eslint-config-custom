@@ -1,2 +1,2 @@
-# easynvest.eslint.config
+# eslint.config-custom
 
