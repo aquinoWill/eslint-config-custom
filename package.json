@@ -1,9 +1,9 @@
 {
-  "name": "eslint-config-easynvest",
-  "version": "0.0.1",
+  "name": "eslint-config-custom",
+  "version": "1.0.0",
   "description": "ESLint and Prettier Config",
   "main": "index.js",
-  "repository": "git@bitbucket.org:easynvest/eslint-config-easynvest.git",
+  "repository": "https://github.com/aquinoWill/eslint-config-custom",
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
