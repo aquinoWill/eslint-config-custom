@@ -1,0 +1,2 @@
+# easynvest.eslint.config
+
