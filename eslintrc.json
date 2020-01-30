@@ -1,9 +1,14 @@
 {
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
   "plugins": [
     "import",
     "node",
     "promise",
-    "standard"
+    "standard",
+    "prettier"
   ],
   "env": {
     "node": true,
@@ -27,7 +32,7 @@
     "no-console": 0,
     "no-plusplus": 0,
     "global-require": 0,
-    "semi": [2, "never"],
+    "semi": ["always"],
     "no-await-in-loop": 0,
     "no-confusing-arrow": 0,
     "no-debugger": ["warn"],
@@ -35,12 +40,21 @@
     "no-underscore-dangle": 2,
     "jsx-a11y/href-no-hash": 0,
     "function-paren-newline": 0,
+    "prettier/prettier": "error",
     "import/prefer-default-export": 0,
     "arrow-body-style": [2, "as-needed"],
     "no-return-assign": ["error", "except-parens"],
     "no-unused-vars": [2, { "argsIgnorePattern": "_" }],
     "import/imports-first": ["error", "absolute-first"],
     "generator-star-spacing": [2, { "before": true, "after": false }],
-    "no-unused-expressions": [2, { "allowShortCircuit": true }]
+    "no-unused-expressions": [2, { "allowShortCircuit": true }],
+    "overrides": [
+      {
+        "files": ["*-test.js","*.spec.js"],
+        "rules": {
+          "no-unused-expressions": "off"
+        }
+      }
+    ]
   }
 }
