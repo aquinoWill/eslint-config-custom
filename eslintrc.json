@@ -6,24 +6,20 @@
     "standard"
   ],
   "env": {
-    "browser": true,
     "node": true,
-    "es6": true,
-    "jest": true,
-    "jest/globals": true,
-    "shared-node-browser": true
+    "es6": true
   },
   "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "document": "readonly",
+    "navigator": "readonly",
+    "window": "readonly"
   },
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
-      "defaultParams": true,
-      "spread": true
-    }
+      "jsx": true
+    },
+    "sourceType": "module"
   },
   "rules": {
     "max-len": ["error", { "code": 120 }],
