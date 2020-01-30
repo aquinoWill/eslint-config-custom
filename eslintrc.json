@@ -40,7 +40,27 @@
     "no-underscore-dangle": 2,
     "jsx-a11y/href-no-hash": 0,
     "function-paren-newline": 0,
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", {
+      "bracketSpacing": true,
+      "jsxBracketSameLine": false,
+      "parser": "flow",
+      "printWidth": 100,
+      "semi": true,
+      "singleQuote": true,
+      "optionalChaining": true,
+      "tabWidth": 2,
+      "trailingComma": "all",
+      "useTabs": false,
+      "arrowParens": "avoid",
+      "overrides": [
+        {
+          "files": "*.json",
+          "options": {
+            "parser": "json"
+          }
+        }
+      ]
+    }],
     "import/prefer-default-export": 0,
     "arrow-body-style": [2, "as-needed"],
     "no-return-assign": ["error", "except-parens"],
